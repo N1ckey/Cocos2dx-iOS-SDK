@@ -1,7 +1,6 @@
 # 重点提醒：<br />
 1.一定要进行初始化init操作，不然会无法进入Elva AI系统。<br />
-2.iOS10需要获取权限，具体方法参考下面链接 http://blog.csdn.net/u012681458/article/details/51865435 <br />
-3.<div>
+2.<div>
     <table border="0">
       <tr>
         <th>方法</th>
@@ -138,3 +137,29 @@ config : (可选)自定义ValueMap信息。可以在此处设置特定的Tag信�
       }
     );
     </pre>
+
+
+12）从不同入口进入不同故事线功能。<br />
+通过添加（ anotherWelcomeText='公告' ）来启用不同入口进入不同故事线功能。
+
+ > * 参数示例:<br />
+    <pre>
+    //如果是在智能客服运营主界面中
+    ECServiceCocos2dx:: showElvaOP ("elvaTestName","12349303258",1,"","1",
+    //如果是在智能客主界面中
+    ECServiceCocos2dx:: showConversation ("elvaTestName","12349303258",1,"","1",
+      { 
+        hs-custom-metadata＝｛
+        // (说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。)
+        hs-tags＝'军队，充值' 
+anotherWelcomeText='公告'
+	//调用不同故事线功能，需要使用指定的提示语句，调出相应的机器人欢迎语。
+	//注：使用的'公告'提示语句，需要和故事线中的User Say相对应。
+        VersionCode＝'3'
+        ｝
+      }
+    );
+    </pre>
+
+
+
