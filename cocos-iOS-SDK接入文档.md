@@ -140,7 +140,7 @@ config : (可选)自定义ValueMap信息。可以在此处设置特定的Tag信�
 
 
 12）从不同入口进入不同故事线功能。<br />
-通过添加（ anotherWelcomeText='公告' ）来启用不同入口进入不同故事线功能。
+    通过添加（ anotherWelcomeText='公告' ）来启用不同入口进入不同故事线功能。
 
  > * 参数示例:<br />
     <pre>
