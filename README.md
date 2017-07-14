@@ -1,4 +1,8 @@
 # Elva iOS SDK Version Update
+AIHelp IOS SDK For Cocos.
+
+# Click [HERE](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) to navigate to the releases tab to download new version sdk zip file
+
 ## 1.1.8 (latest)
 1, url with https protocol<br />
 2, the form short connection display title<br />
