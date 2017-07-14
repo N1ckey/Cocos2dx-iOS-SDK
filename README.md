@@ -11,10 +11,10 @@ AIHelp IOS SDK For Cocos.
 ## 1.3.0 
 * Operation Module
 
-## 1.1.8 (latest)
-1, url with https protocol<br />
-2, the form short connection display title<br />
-3, support from the FAQ directly into the manual
+## 1.1.8 
+* url with https protocol
+* the form short connection display title
+* support from the FAQ directly into the manual
 ## 1.1.6
 1, in accordance with the device id to support customer complaints
 ## 1.1.5
