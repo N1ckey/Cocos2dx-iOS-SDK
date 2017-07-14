@@ -1,4 +1,14 @@
 # Elva iOS SDK版本更新
+# 点击 [此处](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) 查看下载历史版本
+
+## 1.3.2 (最新)
+* 根据iOS系统版本使用WKWebView或UIWebView显示web页面
+* VIP聊天功能支持
+* SDK语言新增土耳其语，俄语部分内容调整
+
+## 1.3.0 
+* 新增运营模块功能
+
 ## 1.1.9 (最新)
 1、url用https协议<br />
 2、增加接口设置人工评价默认分数<br />
