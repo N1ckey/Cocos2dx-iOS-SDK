@@ -6,7 +6,7 @@ AIHelp IOS SDK For Cocos.
 ## 1.3.2 (latest)
 * Display a webview with WKWebView or UIWebView depending on iOS version
 * A new sdk language Russian Added
-* some bug fix
+* VIP Chat Support
 
 ## 1.3.0 
 * Operation Module
