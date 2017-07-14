@@ -1,7 +1,7 @@
 # Elva iOS SDK Version Update
 AIHelp IOS SDK For Cocos.
 
-# Click [HERE](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) to navigate to the releases tab to download history version sdk zip file
+## Click [HERE](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) to navigate to the releases tab to download history version sdk zip file
 
 ## 1.3.2 (latest)
 * Display a webview with WKWebView or UIWebView depending on iOS version
