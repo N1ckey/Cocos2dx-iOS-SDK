@@ -1,6 +1,9 @@
 //
 //  ECServiceCocos2dx.h
-//  ElvaChatService Cocos2dx SDK
+//  SanguoCOK
+//
+//  Created by zhangwei on 16/4/12.
+//
 //
 
 #ifndef ECServiceCocos2dx_h
@@ -8,35 +11,35 @@
 
 #include "cocos2d.h"
 #include <string>
-#define ES_WITH_TAGS_MATCHING "withTagsMatching"
+
 
 using namespace std;
+
+/*! \mainpage Documentation for the Cocos2dx plugin
+ *
+ * The HelpshiftCocos2dx plugin exposes the C++ Helpshift API for cocos2dx games.
+ */
+
+/*! \brief API for the Cocos2dx plugin for Helpshift Cocos2dx SDK
+ *
+ */
 
 class ECServiceCocos2dx
 {
 public:
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-public:
-    static void init(string appSecret,string domain,string appId);
-	static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag);
-    static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag,cocos2d::ValueMap& config);
-    static void showSingleFAQ(string faqId);
-    static void showSingleFAQ(string faqId,cocos2d::ValueMap& config);
-    static void showFAQSection(string sectionPublishId);
-    static void showFAQSection(string sectionPublishId,cocos2d::ValueMap& config);
-    static void showFAQs();
-    static void showFAQs(cocos2d::ValueMap& config);
-    static void setName(string game_name);
+	static void init(string appId,string appKey,string domain);
+    static void show(string userName,string userIcon,string userId,string appName,int serverId cocos2d::ValueMap& config,string showConversationFlag);
+    
+    static void show(string userName,string userIcon,string userId,string appName);
+    static void showFAQ(string faqId);
+    static void showFAQ(string faqId,cocos2d::ValueMap& config);
+    
+    static void showFAQList();
+    static void showFAQList(cocos2d::ValueMap& config);
+    
     static void registerDeviceToken(string deviceToken);
-    static void setUserId(string playerUid);//自助服务，在showFAQ之前调用
-    static void setServerId(int serverId);//自助服务，在showFAQ之前调用
-    static void setUserName(string playerName);//在需要的接口之前调用，建议游戏刚进入就默认调用
-    static void showConversation(string playerUid,int serverId);//请优先实现setUserName接口
-    static void showConversation(string playerUid,int serverId,cocos2d::ValueMap& config);
-    static bool setSDKLanguage(const char* locale);
-    static void useDevice();
-    static void setEvaluateStar(int star);//评价默认星星数量
+    
     
 };
-
 #endif
+
