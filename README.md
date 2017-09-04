@@ -3,7 +3,10 @@ AIHelp IOS SDK For Cocos.
 
 ## Click [HERE](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) to navigate to the releases tab to download history version sdk zip file
 
-## 1.3.2 (latest)
+## 1.3.4 (latest)
+* Multiple section display supported
+
+## 1.3.2 
 * Display a webview with WKWebView or UIWebView depending on iOS version
 * A new sdk language Russian Added
 * VIP Chat Support
