@@ -118,9 +118,9 @@ static NSArray *elvaVectorOfMapsToNSArray(cocos2d::ValueVector& data) {
 }
 
 #pragma mark - 初始化init
-void ECServiceCocos2dx::init(string appSecret,string domain,string appId) {
+void ECServiceCocos2dx::init(string appKey,string domain,string appId) {
     NSString* NSAppId = elvaParseCString(appId.c_str());
-    NSString* NSAppSecret = elvaParseCString(appSecret.c_str());
+    NSString* NSAppSecret = elvaParseCString(appKey.c_str());
     NSString* NSDomain = elvaParseCString(domain.c_str());
     [ECServiceSdk init:NSAppSecret Domain:NSDomain AppId:NSAppId];
 }
