@@ -15,11 +15,9 @@ using namespace std;
 class ECServiceCocos2dx
 {
 public:
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-public:
     static void init(string appSecret,string domain,string appId);
-	static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag);
-    static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag,cocos2d::CCDictionary *config);
+	static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag);
+    static void showElva(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config);
     static void showSingleFAQ(string faqId);
     static void showSingleFAQ(string faqId,cocos2d::CCDictionary *config);
     static void showFAQSection(string sectionPublishId);
@@ -36,6 +34,8 @@ public:
     static bool setSDKLanguage(const char* locale);
     static void useDevice();
     static void setEvaluateStar(int star);//评价默认星星数量
+	static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config);
+    static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config,int defaultTabIndex);
     
 };
 

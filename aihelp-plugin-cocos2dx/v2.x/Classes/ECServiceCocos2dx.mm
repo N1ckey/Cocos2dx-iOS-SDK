@@ -1,8 +1,6 @@
 //
-//  ECServiceCocos2dx.m
-//  SanguoCOK
-//
-//  Created by zhangwei on 16/4/12.
+//  ECServiceCocos2dx.mm
+//  AIHelp Cocos2dx iOS SDK
 //
 //
 
@@ -102,14 +100,14 @@ void ECServiceCocos2dx::init(string appSecret,string domain,string appId) {
     [ECServiceSdk init:NSAppSecret Domain:NSDomain AppId:NSAppId];
 }
 #pragma mark - show 不带参数config
-void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag){
+void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag){
     NSString* NSuserName = elvaParseCString(playerName.c_str());
     
     NSString* NSuserId = elvaParseCString(playerUid.c_str());
     
     NSString* parseId = elvaParseCString(playerParseId.c_str());
     
-    NSString *conversationFlag =elvaParseCString(playershowConversationFlag.c_str());
+    NSString *conversationFlag =elvaParseCString(showConversationFlag.c_str());
     
     NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
     [ECServiceSdk showElva:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag];
@@ -118,7 +116,7 @@ void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId
 }
 
 #pragma mark - show 带参数config
-void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId,string playerParseId,string playershowConversationFlag,cocos2d::CCDictionary* config) {
+void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary* config) {
     
     NSString* NSuserName = elvaParseCString(playerName.c_str());
     
@@ -126,7 +124,7 @@ void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId
     
     NSString* parseId = elvaParseCString(playerParseId.c_str());
     
-    NSString *conversationFlag =elvaParseCString(playershowConversationFlag.c_str());
+    NSString *conversationFlag =elvaParseCString(showConversationFlag.c_str());
     
     
     NSMutableDictionary *customData = elvaParseConfigDic(config);
@@ -230,4 +228,43 @@ void ECServiceCocos2dx::useDevice() {
 }
 void ECServiceCocos2dx::setEvaluateStar(int star){
     [ECServiceSdk setEvaluateStar:star];
+}
+/*
+展示运营主界面，带config
+*/
+void ECServiceCocos2dx::showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config){
+    
+    
+    NSString* NSuserName = elvaParseCString(playerName.c_str());
+    
+    NSString* NSuserId = elvaParseCString(playerUid.c_str());
+    
+    NSString* parseId = elvaParseCString(playerParseId.c_str());
+    
+    NSString *conversationFlag =elvaParseCString(showConversationFlag.c_str());
+    
+    
+    NSMutableDictionary *customData = elvaParseConfigDic(config);
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showElvaOP:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag Config :customData];
+}
+
+/*
+展示运营主界面，带index
+*/
+void ECServiceCocos2dx::showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config,int defaultTabIndex){
+    
+    NSString* NSuserName = elvaParseCString(playerName.c_str());
+    
+    NSString* NSuserId = elvaParseCString(playerUid.c_str());
+    
+    NSString* parseId = elvaParseCString(playerParseId.c_str());
+    
+    NSString *conversationFlag =elvaParseCString(showConversationFlag.c_str());
+    
+    
+    NSMutableDictionary *customData = elvaParseConfigDic(config);
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showElvaOP:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag Config :customData defaultTabIndex:defaultTabIndex];
+
 }
