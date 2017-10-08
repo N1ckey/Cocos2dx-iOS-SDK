@@ -23,9 +23,9 @@ aihelp-plugin-cocos2dx文件包含：
 - libsqlite3.0.dylib
 - Security
 - CoreSpotlight
-- GameController(required by cocos2d-x)
-- MediaPlayer(required by cocos2d-x)
-- Webkit(if [operation module](#showElvaOP) is used )
+- GameController(cocos2d-x 需要)
+- MediaPlayer(cocos2d-x 需要)
+- Webkit(若使用 [运营模块API](#showElvaOP))
 
 ```
 注意：
