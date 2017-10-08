@@ -1,5 +1,5 @@
 ## 接入说明
-### 1. 下载AIHelp Cocos2d-x Android SDK：
+### 1. 下载AIHelp Cocos2d-x iOS SDK：
 点击页面右上角的“Clone or download”按钮下载iOS SDK，下载完成后解压文件。
 aihelp-plugin-cocos2dx文件包含：
 
@@ -45,9 +45,9 @@ aihelp-plugin-cocos2dx文件包含：
 
 ```
 ECServiceCocos2dx::init(
-			string appId,
-			string appKey,
-			string domain) 
+			String appKey,
+			String domain,
+			String appId);
 ```
 	
 
@@ -56,9 +56,10 @@ ECServiceCocos2dx::init(
 
 | 参数 | 说明 |
 |:------------- |:---------------|
-| appId     | app唯一标识，从Web管理系统获取| 
 | appKey    | app唯一密钥，从AIHelp Web管理系统获取|
 | domain     | 您的AIHelp域名，从Web管理系统获取,例如foo.AIHELP.NET|
+| appId     | app唯一标识，从Web管理系统获取| 
+
 
 注：请使用注册邮箱登录 [AIHelp 后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看appId, appKey和domain。初次使用，需登录[AIHelp 官网](http://aihelp.net/index.html)自助注册。
 
@@ -67,8 +68,7 @@ ECServiceCocos2dx::init(
 
 ```
 // 一定要在应用启动时进行初始化init操作，不然会无法进入AIHelp智能客服系统。
-ElvaChatServiceHelper.init(
-			cocos2dxActivity,
+ECServiceCocos2dx::init(
 			"YOUR_API_KEY",
 			"YOUR_DOMAIN_NAME",
 			"YOUR_APP_ID");
@@ -104,7 +104,7 @@ ElvaChatServiceHelper.init(
 				string playerUid,
 				int serverId,
 				string playerParseId,
-				string playershowConversationFlag);
+				string showConversationFlag);
 			
 
 或
@@ -114,7 +114,7 @@ ElvaChatServiceHelper.init(
 				string playerUid,
 				int serverId,
 				string playerParseId,
-				string playershowConversationFlag,
+				string showConversationFlag,
 				cocos2d::ValueMap& config);
 
 **代码示例：**
@@ -130,7 +130,7 @@ ElvaChatServiceHelper.init(
 				"1",
 				{ 
 					hs-custom-metadata＝｛
-					hs-tags＝'军队，充值',
+					hs-tags＝'军队,充值',
 					VersionCode＝'3'
 					｝
 				});
@@ -141,7 +141,7 @@ ElvaChatServiceHelper.init(
 - playerName:游戏中用户名称。 
 - playerUid:用户在游戏里的唯一标识。 
 - serverId:用户所在的服务器编号。 
-- playerParseId:可为空值
+- playerParseId:设置为空字符串（不可为NULL)
 - showConversationFlag(0或1):是否开启人工入口。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口。如下图。
 - config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 	
@@ -187,7 +187,7 @@ ElvaChatServiceHelper.init(
 					"1",
 					{ 
 						hs-custom-metadata＝｛
-						hs-tags＝'军队，充值',
+						hs-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -198,7 +198,7 @@ ElvaChatServiceHelper.init(
 - playerName:游戏中用户名称。 
 - playerUid:用户在游戏里的唯一标识。 
 - serverId:用户所在的服务器编号。 
-- playerParseId:可为空值
+- playerParseId:设置为空字符串（不可为NULL)
 - showConversationFlag(0或1):是否开启人工入口。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口。如下图。
 - config: 自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 - defaultTabIndex: 首次进入运营界面时候展示的tab的编号，默认为第一个tab，若需默认展示客服界面tab，设置值为999
@@ -226,7 +226,7 @@ ElvaChatServiceHelper.init(
 		ECServiceCocos2dx::showFAQs (
 					{ 
 						hs-custom-metadata＝｛
-						hs-tags＝'军队，充值',
+						hs-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -261,7 +261,7 @@ ElvaChatServiceHelper.init(
 					"20",
 					{ 
 						hs-custom-metadata＝｛
-						hs-tags＝'军队，充值',
+						hs-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -368,7 +368,7 @@ ElvaChatServiceHelper.init(
 					123,
 					{ 
 						hs-custom-metadata＝｛
-						hs-tags＝'军队，充值',
+						hs-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
