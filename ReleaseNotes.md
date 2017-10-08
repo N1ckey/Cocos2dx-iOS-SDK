@@ -1,9 +1,13 @@
-# Elva iOS SDK Version Update
-AIHelp IOS SDK For Cocos.
+# AIHelp iOS SDK Version Update
+AIHelp IOS SDK For Cocos2dx.
 
-## Click [HERE](https://github.com/AI-HELP/cocos-iOS-SDK-stable/releases) to navigate to the releases tab to download history version sdk zip file
+[Integration Guide](https://github.com/AI-HELP/Cocos2dx-iOS-SDK/blob/master/README.md)
 
-## 1.3.4 (latest)
+## 1.3.5(latest)
+* Optimize AI and VIP Converstation UI.
+* Bug fixes.
+
+## 1.3.4
 * Multiple section display supported
 
 ## 1.3.2 
@@ -45,6 +49,3 @@ AIHelp IOS SDK For Cocos.
 * FAQ support point praise
 * Add cocos2dx engine 2 interface
 
-# SDK Access Instruction
-中文版iOS SDK接入说明： https://github.com/CS30-NET/ios-sdk-stable/blob/master/SDK-Access-Instructions/iOS%20SDK%E6%8E%A5%E5%85%A5%E8%AF%B4%E6%98%8E%E2%80%94%E4%B8%AD%E6%96%87%E7%89%88.md <br />
-iOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/SDK-Access-Instructions/iOS%20SDK%20Access%20Instructions%E2%80%94EN.md
