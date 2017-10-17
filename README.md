@@ -24,7 +24,7 @@ The folder **aihelp-plugin-cocos2dx** contains:
 - CoreText
 - SystemConfiguration
 - UIKit
-- libsqlite3.0.dylib
+- libsqlite3.0.tbd
 - Security
 - CoreSpotlight
 - GameController(required by cocos2d-x)
