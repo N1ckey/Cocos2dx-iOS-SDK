@@ -21,7 +21,7 @@ public:
     static void showSingleFAQ(string faqId);
     static void showSingleFAQ(string faqId,cocos2d::ValueMap& config);
     static void showFAQSection(string sectionPublishId);
-    static void showFAQSection(string sectionPublishId,cocos2d::ValueMap& config;
+    static void showFAQSection(string sectionPublishId,cocos2d::ValueMap& config);
     static void showFAQs();
     static void showFAQs(cocos2d::ValueMap& config);
     static void setName(string game_name);

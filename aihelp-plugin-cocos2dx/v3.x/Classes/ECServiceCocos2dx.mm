@@ -54,7 +54,7 @@ static void elvaAddObjectToNSArray(const cocos2d::Value& value, NSMutableArray *
         NSMutableDictionary *element = [NSMutableDictionary dictionary];
         auto valueDict = value.asValueMap();
         for (auto iter = valueDict.begin(); iter != valueDict.end(); ++iter) {
-            hsAddObjectToNSDict(iter->first, iter->second, element);
+            elvaAddObjectToNSDict(iter->first, iter->second, element);
         }
         [array addObject:element];
     }
