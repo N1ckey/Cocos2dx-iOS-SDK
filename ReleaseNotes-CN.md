@@ -2,7 +2,11 @@
 
 [查看接入文档](https://github.com/AI-HELP/Cocos2dx-iOS-SDK/blob/master/README_CN.md)
 
-## 1.3.5(latest)
+
+## 1.3.6
+1. 实时客服沟通接口showVIPChat
+
+## 1.3.5
 * 优化机器人和人工聊天UI
 * 修复Bug
 

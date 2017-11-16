@@ -268,3 +268,9 @@ void ECServiceCocos2dx::showElvaOP(string playerName,string playerUid,int server
     [ECServiceSdk showElvaOP:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag Config :customData defaultTabIndex:defaultTabIndex];
 
 }
+#pragma mark - 打开VIP聊天
+void ECServiceCocos2dx::showVIPChat(string webAppId) {
+    NSString* appidWeb = elvaParseCString(webAppId.c_str());
+    [ECServiceSdk showVIPChat:appidWeb];
+    
+}

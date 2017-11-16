@@ -3,7 +3,10 @@ AIHelp IOS SDK For Cocos2dx.
 
 [Integration Guide](https://github.com/AI-HELP/Cocos2dx-iOS-SDK/blob/master/README.md)
 
-## 1.3.5(latest)
+## 1.3.6
+1. Add showVIPChat interface to allow IM between user and customer support personnel. 
+
+## 1.3.5
 * Optimize AI and VIP Converstation UI.
 * Bug fixes.
 
