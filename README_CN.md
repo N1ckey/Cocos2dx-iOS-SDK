@@ -129,8 +129,8 @@ ECServiceCocos2dx::init(
 				"",
 				"1",
 				{ 
-					hs-custom-metadata＝｛
-					hs-tags＝'军队,充值',
+					elva-custom-metadata＝｛
+					elva-tags＝'军队,充值',
 					VersionCode＝'3'
 					｝
 				});
@@ -143,7 +143,7 @@ ECServiceCocos2dx::init(
 - serverId:用户所在的服务器编号。 
 - playerParseId:设置为空字符串（不可为NULL)
 - showConversationFlag(0或1):是否开启人工入口。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口。如下图。
-- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
+- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-CN-Android.png "showElva")
 	
@@ -186,8 +186,8 @@ ECServiceCocos2dx::init(
 					"",
 					"1",
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'军队,充值',
+						elva-custom-metadata＝｛
+						elva-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -200,7 +200,7 @@ ECServiceCocos2dx::init(
 - serverId:用户所在的服务器编号。 
 - playerParseId:设置为空字符串（不可为NULL)
 - showConversationFlag(0或1):是否开启人工入口。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口。如下图。
-- config: 自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
+- config: 自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 - defaultTabIndex: 首次进入运营界面时候展示的tab的编号，默认为第一个tab，若需默认展示客服界面tab，设置值为999
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
@@ -225,8 +225,8 @@ ECServiceCocos2dx::init(
 	{						
 		ECServiceCocos2dx::showFAQs (
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'军队,充值',
+						elva-custom-metadata＝｛
+						elva-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -234,7 +234,7 @@ ECServiceCocos2dx::init(
 
 **参数说明：**
 
-- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
+- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-CN-Android.png "showFAQs")
 
@@ -260,8 +260,8 @@ ECServiceCocos2dx::init(
 		ECServiceCocos2dx::showSingleFAQ (
 					"20",
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'军队,充值',
+						elva-custom-metadata＝｛
+						elva-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -270,7 +270,7 @@ ECServiceCocos2dx::init(
 **参数说明：**
 
 - faqId:FAQ的PublishID,可以在[AIHelp 后台](https://aihelp.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID。
-- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
+- config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 	
 ![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-CN-Android.png "showSingleFAQ")
 
@@ -367,8 +367,8 @@ ECServiceCocos2dx::init(
 					"PLAYER_ID",
 					123,
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'军队,充值',
+						elva-custom-metadata＝｛
+						elva-tags＝'军队,充值',
 						VersionCode＝'3'
 						｝
 					});
@@ -377,7 +377,7 @@ ECServiceCocos2dx::init(
 
 - playerUid:用户在游戏里的唯一标识
 - serverId:用户所在的服务器编号
-- config:可选参数，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
+- config:可选参数，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 
 **最佳实践：**
 > 1. 通常你不需要调用这个接口，除非你想在应用里设置触发点，让用户有机会直接进入人工客服聊天界面。
@@ -418,14 +418,14 @@ ECServiceCocos2dx::init(
 	tags.add("军队");
 	tags.add("充值");
 	HashMap<String,Object> map = new HashMap();
-	map.put("hs-tags",tags);
+	map.put("elva-tags",tags);
 	
 	//调用不同故事线功能，使用指定的提示语句，调出相应的机器人欢迎语
 	//注：anotherWelcomeText是key，不能改变。
 	//需要改变的是usersay，保持和故事线中配置的User Say内容一样
 	map.put("anotherWelcomeText","usersay");
 	HashMap<String,Object> config = new HashMap();
-	config.put("hs-custom-metadata",map);
+	config.put("elva-custom-metadata",map);
 	
 	//如果是在智能客服主界面中	
 	ECServiceCocos2dx::showElva(

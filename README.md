@@ -124,8 +124,8 @@ or
 				"",
 				"1",
 				{ 
-					hs-custom-metadata＝｛
-					hs-tags＝'vip, pay1',
+					elva-custom-metadata＝｛
+					elva-tagss＝'vip, pay1',
 					VersionCode＝'3'
 					｝
 				});
@@ -138,7 +138,7 @@ or
 - __serverId__: The Server ID
 - __playerParseId__: Can be empty string, can NOT be NULL.
 - __showConversationFlag__: Should be "0" or "1". If set "1", the VIP conversation entry will be displayed in the upper right of the AI conversation interface.
-- __config__: Optional param for custom ValueMap information. You can pass specific Tag information using vector hs-tags, see above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.
+- __config__: Optional param for custom ValueMap information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.
 	
 ![showElva](https://github.com/AIHELP-NET/Pictures/blob/master/showElva-EN-Android.png "showElva")
 	
@@ -182,8 +182,8 @@ or
 					"",
 					"1",
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'vip, pay1',
+						elva-custom-metadata＝｛
+						elva-tags＝'vip, pay1',
 						VersionCode＝'3'
 						｝
 					});
@@ -196,7 +196,7 @@ or
 - __serverId__: The Server ID
 - __playerParseId__: Can be empty string, can NOT be NULL.
 - __showConversationFlag__: Should be "0" or "1". If set "1", the VIP conversation entry will be shown in the top right corner of the AI conversation interface.
-- __config__: Custom ValueMap information. You can pass specific Tag information using vector hs-tags, see above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.
+- __config__: Custom ValueMap information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.
 - __defaultTabIndex__: Optional. The index of the first tab to be shown when entering the operation interface. Default value is the left-most tab，if you would like to show the AI conversation interface(the right-most，set it to 999.
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
@@ -219,8 +219,8 @@ or
 	{						
 		ECServiceCocos2dx::showFAQs (
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'vip,pay1',
+						elva-custom-metadata＝｛
+						elva-tags＝'vip,pay1',
 						VersionCode＝'3'
 						｝
 					});
@@ -228,7 +228,7 @@ or
 
 **About Parameters：**
 
-- __config__: Custom ValueMap information. You can pass specific Tag information using vector hs-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
+- __config__: Custom ValueMap information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-Android.png "showFAQs")
 
@@ -254,8 +254,8 @@ or
 		ECServiceCocos2dx::showSingleFAQ (
 					"20",
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'vip,pay1',
+						elva-custom-metadata＝｛
+						elva-tags＝'vip,pay1',
 						VersionCode＝'3'
 						｝
 					});
@@ -264,7 +264,7 @@ or
 **About Parameters：**
 
 - __faqId__: The PublishID of the FAQ item, you can check it in [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FQA menu and copy its PublishID.
-- __config__: Custom ValueMap information. You can pass specific Tag information using vector hs-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
+- __config__: Custom ValueMap information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
 	
 ![showSingleFAQ](https://github.com/AIHELP-NET/Pictures/blob/master/showSingleFAQ-EN-Android.png "showSingleFAQ")
 
@@ -361,8 +361,8 @@ or
 					"PLAYER_ID",
 					123,
 					{ 
-						hs-custom-metadata＝｛
-						hs-tags＝'vip, pay1',
+						elva-custom-metadata＝｛
+						elva-tags＝'vip, pay1',
 						VersionCode＝'3'
 						｝
 					});
@@ -371,7 +371,7 @@ or
 
 - __playerUid__:Unique user ID
 - __serverId:__ The unique server ID
-- __config__: Custom ValueMap information. You can pass specific Tag information using vector hs-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
+- __config__: Custom ValueMap information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.
 
 **Best Practice：**
 > 1. Normally you don't need to use this method unless you intend to allow users to enter VIP conversation without engaging with the AI chat. You may use this method as a privilege for some users.
@@ -411,14 +411,14 @@ If your APP provides multiple entries to AIHelp, and you intend to introduce dif
 	tags.add("vip");
 	tags.add("pay1");
 	HashMap<String,Object> map = new HashMap();
-	map.put("hs-tags",tags);
+	map.put("elva-tags",tags);
 	
 	// note：anotherWelcomeText is key，should be unchanged.
 	// you need to change usersay according to the "User Say" in your new 
 	// story line
 	map.put("anotherWelcomeText","usersay");
 	HashMap<String,Object> config = new HashMap();
-	config.put("hs-custom-metadata",map);
+	config.put("elva-custom-metadata",map);
 	
 
 	ECServiceCocos2dx::showElva(
