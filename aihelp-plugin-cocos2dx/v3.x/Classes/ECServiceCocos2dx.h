@@ -25,7 +25,7 @@ public:
     static void showFAQs();
     static void showFAQs(cocos2d::ValueMap& config);
     static void setName(string game_name);
-    static void registerDeviceToken(string deviceToken);
+    static void registerDeviceToken(string deviceToken, bool isVIP);
     static void setUserId(string playerUid);//自助服务，在showFAQ之前调用
     static void setServerId(int serverId);//自助服务，在showFAQ之前调用
     static void setUserName(string playerName);//在需要的接口之前调用，建议游戏刚进入就默认调用
@@ -37,6 +37,9 @@ public:
 	static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::ValueMap& config);
     static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::ValueMap& config,int defaultTabIndex);
     static void showVIPChat(string webAppId);
+    static void showStoreReview();
+    static string getNotificationMessage();
+    
 };
 #endif
 

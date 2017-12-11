@@ -207,10 +207,10 @@ void ECServiceCocos2dx::setName(string game_name){
 }
 
 #pragma mark - 设置deviceToken
-void ECServiceCocos2dx::registerDeviceToken(string deviceToken) {
+void ECServiceCocos2dx::registerDeviceToken(string deviceToken, bool isVIP) {
     NSString* token = elvaParseCString(deviceToken.c_str());
-    [ECServiceSdk registerDeviceToken:token];
-    
+    Boolean isVip = (Boolean)isVIP;
+    [ECServiceSdk registerDeviceToken:token isVIP:isVip];
 }
 #pragma mark - 设置UserId
 void ECServiceCocos2dx::setUserId(string playerUid){
@@ -301,3 +301,14 @@ void ECServiceCocos2dx::showVIPChat(string webAppId) {
     [ECServiceSdk showVIPChat:appidWeb];
     
 }
+void ECServiceCocos2dx::showStoreReview()
+{
+    [ECServiceSdk showStoreReview];
+}
+
+string ECServiceCocos2dx::getNotificationMessage()
+{
+    //return [ECServiceSdk getNotificationMessage];
+    return "";
+}
+
