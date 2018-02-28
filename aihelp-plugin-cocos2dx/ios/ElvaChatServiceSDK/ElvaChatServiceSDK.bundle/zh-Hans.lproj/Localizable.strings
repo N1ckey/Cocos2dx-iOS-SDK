@@ -20,3 +20,4 @@
 "elva__mark_yes"="是";
 "elva__mark_yes_no_question"="这有帮助吗";
 "content_too_long"="不能超过%ld个字！";
+"CustomerService"="HELP";

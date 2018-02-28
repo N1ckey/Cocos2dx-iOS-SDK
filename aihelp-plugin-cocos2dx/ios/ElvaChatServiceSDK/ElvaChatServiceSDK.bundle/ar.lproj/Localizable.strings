@@ -8,7 +8,7 @@
 
 "ElvaChatService" = "ElvaChat Service";
 "offLine"="Your network is disconnected,please try again later";
-"ContactCustomerService" = "اِتصل بنا";
+"ContactCustomerService" = "اتصل بنا";
 "self_service_interface"="services";
 "Message" = "Message";
 "WasHelp"="Was this helpful?";
@@ -20,3 +20,4 @@
 "elva__mark_yes"="أجل";
 "elva__mark_yes_no_question"="هل كان هذا مُفيداً؟";
 "content_too_long"="No more than %ld chars!";
+"CustomerService"="HELP";

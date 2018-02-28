@@ -20,3 +20,4 @@
 "elva__mark_yes"="YES";
 "elva__mark_yes_no_question"="Was this helpful?";
 "content_too_long"="No more than %ld chars!";
+"CustomerService"="HELP";
