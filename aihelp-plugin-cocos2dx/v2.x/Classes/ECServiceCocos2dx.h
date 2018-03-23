@@ -26,19 +26,18 @@ public:
     static void showFAQs(cocos2d::CCDictionary *config);
     static void setName(string game_name);
     static void registerDeviceToken(string deviceToken, bool isVIP);
-    static void setUserId(string playerUid);//自助服务，在showFAQ之前调用
-    static void setServerId(int serverId);//自助服务，在showFAQ之前调用
-    static void setUserName(string playerName);//在需要的接口之前调用，建议游戏刚进入就默认调用
-    static void showConversation(string playerUid,int serverId);//请优先实现setUserName接口
+    static void setFcmToken(string deviceToken);
+    static void setUserId(string playerUid);//use self-service, should call before showFAQ
+    static void setServerId(int serverId);//use self-service, should call before showFAQ
+    static void setUserName(string playerName);//call before service, after init
+    static void showConversation(string playerUid,int serverId);
     static void showConversation(string playerUid,int serverId,cocos2d::CCDictionary *config);
-    static bool setSDKLanguage(const char* locale);
+    static void setSDKLanguage(const char* locale);
     static void useDevice();
     static void setEvaluateStar(int star);//评价默认星星数量
 	static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config);
     static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::CCDictionary *config,int defaultTabIndex);
     static void showVIPChat(string webAppId);
-    static void showStoreReview();
-    static string getNotificationMessage();
 };
 
 #endif

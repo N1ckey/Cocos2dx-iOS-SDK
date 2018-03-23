@@ -23,7 +23,7 @@
 + (void) setUserName:(NSString*) playerName;//在需要的接口之前调用，建议游戏刚进入就默认调用
 + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId;//请优先实现setUserName接口
 + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId Config:(NSMutableDictionary*) config;
-+ (BOOL) setSDKLanguage:(NSString*) sdkLanguage;
++ (void) setSDKLanguage:(NSString*) sdkLanguage;
 + (void) setChangeDirection;
 + (void) setUseDevice;
 + (void) setEvaluateStar:(int) star;

@@ -31,15 +31,13 @@ public:
     static void setUserName(string playerName);//在需要的接口之前调用，建议游戏刚进入就默认调用
     static void showConversation(string playerUid,int serverId);//请优先实现setUserName接口
     static void showConversation(string playerUid,int serverId,cocos2d::ValueMap& config);
-    static bool setSDKLanguage(const char* locale);
+    static void setSDKLanguage(const char* locale);
     static void useDevice();
     static void setEvaluateStar(int star);//评价默认星星数量
 	static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::ValueMap& config);
     static void showElvaOP(string playerName,string playerUid,int serverId,string playerParseId,string showConversationFlag,cocos2d::ValueMap& config,int defaultTabIndex);
     static void showVIPChat(string webAppId);
-    static void showStoreReview();
-    static string getNotificationMessage();
-    
+    static void showStoreReview();    
 };
 #endif
 

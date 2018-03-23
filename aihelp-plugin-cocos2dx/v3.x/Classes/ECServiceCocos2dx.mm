@@ -242,12 +242,11 @@ void ECServiceCocos2dx::showConversation(string playerUid,int serverId,cocos2d::
     [ECServiceSdk showConversation:userId ServerId:serverIdStr Config:customData];
     
 }
-bool ECServiceCocos2dx::setSDKLanguage(const char *locale) {
-    if(locale == NULL || strlen(locale) == 0) {
-        return false;
+void ECServiceCocos2dx::setSDKLanguage(const char *locale) {
+    if(locale != NULL || strlen(locale) != 0) {
+        NSString* language = elvaParseCString(locale);
+        [ECServiceSdk setSDKLanguage:language];
     }
-    NSString* language = elvaParseCString(locale);
-    return [ECServiceSdk setSDKLanguage:language];
 }
 void ECServiceCocos2dx::useDevice() {
     [ECServiceSdk setUseDevice];
@@ -306,9 +305,4 @@ void ECServiceCocos2dx::showStoreReview()
     [ECServiceSdk showStoreReview];
 }
 
-string ECServiceCocos2dx::getNotificationMessage()
-{
-    //return [ECServiceSdk getNotificationMessage];
-    return "";
-}
 
