@@ -203,7 +203,7 @@ ECServiceCocos2dx::init(
 - config: 自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 - defaultTabIndex: 首次进入运营界面时候展示的tab的编号，默认为第一个tab，若需默认展示客服界面tab，设置值为999
 	
-![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
+![showElva](https://github.com/N1ckey/Pictures/blob/master/showElvaOP-CN-IOS.png "showElvaOP")
 
 **最佳实践：**
 > 1. 在您应用的运营入口触发这个接口的调用。
@@ -236,7 +236,7 @@ ECServiceCocos2dx::init(
 
 - config:可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。说明：elva-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
 	
-![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-CN-Android.png "showFAQs")
+![showElva](https://github.com/N1ckey/Pictures/blob/master/showFAQs-CN-IOS.png "showFAQs")
 
 **最佳实践：**
 > 1. 在您应用的FAQ主入口触发这个接口的调用。在AIHelp 后台页面配置并分类FAQ，如果您的FAQ较多，可以增加一个父级分类。
